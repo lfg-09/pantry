@@ -990,7 +990,7 @@ Respond ONLY with a JSON object (no markdown, no backticks):
 }`;
 
   try {
-    const res = await fetch('https://api.anthropic.com/v1/messages', {
+    const res = await fetch('https://bitter-cake-fea7.cmconstantine495.workers.dev', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -1145,7 +1145,7 @@ async function handleReceiptUpload(input) {
     const mediaType = file.type;
 
     try {
-      const res = await fetch('https://api.anthropic.com/v1/messages', {
+      const res = await fetch('https://bitter-cake-fea7.cmconstantine495.workers.dev', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
